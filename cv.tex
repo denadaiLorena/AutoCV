@@ -1,110 +1,109 @@
-\documentclass[10pt,a4paper]{article}
 
+\documentclass[10pt,a4paper]{article}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
-\usepackage[margin=1.6cm]{geometry}
-\usepackage{enumitem}
-\usepackage{titlesec}
-\usepackage{xcolor}
-\usepackage[hidelinks]{hyperref}
-
-\definecolor{accent}{HTML}{1F4E79}
-
+\usepackage[brazil]{babel}
+\usepackage{lmodern}
+\usepackage[a4paper,top=1.35cm,bottom=1.4cm,left=1.6cm,right=1.6cm]{geometry}
+\usepackage{enumitem,titlesec,xcolor,hyperref,tabularx,microtype}
+\definecolor{accent}{HTML}{176B63}
+\hypersetup{colorlinks=true,urlcolor=accent,linkcolor=accent}
 \pagestyle{empty}
 \setlength{\parindent}{0pt}
-\setlength{\parskip}{0pt}
-
-% Títulos de seção
-\titleformat{\section}{\large\bfseries\color{accent}\MakeUppercase}{}{0em}{}[\vspace{-0.6em}\rule{\linewidth}{0.5pt}]
-\titlespacing*{\section}{0pt}{10pt}{6pt}
-
-% Lista compacta
-\setlist[itemize]{leftmargin=1.2em, itemsep=2pt, topsep=3pt, parsep=0pt}
-
-% Entrada: título/local à esquerda, data à direita
-\newcommand{\entry}[4]{%
-  \textbf{#1} \hfill #3 \\
-  \textit{#2} \hfill \textit{#4}\vspace{2pt}%
-}
-
+\setlength{\parskip}{2pt}
+\setlength{\emergencystretch}{2em}
+\setlist[itemize]{leftmargin=1.15em,itemsep=1pt,topsep=2pt,parsep=0pt,partopsep=0pt}
+\titleformat{\section}{\normalsize\bfseries\color{accent}}{}{0pt}{}[\vspace{-2pt}\titlerule]
+\titlespacing*{\section}{0pt}{7pt}{3pt}
 \begin{document}
-
-% ---------- Cabeçalho ----------
-\begin{center}
-  {\Huge\bfseries Lorena Moreira de Nadai}\\[4pt]
-  {\large\color{accent} Desenvolvimento de Software \& Engenharia de Dados}\\[6pt]
-  \href{mailto:lorenadenadai679@gmail.com}{lorenadenadai679@gmail.com} \quad|\quad
-  (27) 99739-9041 \quad|\quad Cariacica -- ES\\[2pt]
-  \href{http://www.linkedin.com/in/lorena-denadai-17a39037b}{LinkedIn} \quad|\quad
-  \href{https://github.com/denadaiLorena}{GitHub}
-\end{center}
-
-% ---------- Resumo ----------
-\section{Resumo Profissional}
-Estudante de Ciência da Computação (6º período) com sólida experiência em modelagem e
-processamento de dados, criação de rotinas automatizadas, SQL e desenvolvimento de software.
-Atualmente atua no setor de tecnologia do IEMA, sendo responsável pela modelagem de bancos
-de dados, construção de pipelines batch e dashboards analíticos para acompanhamento de
-indicadores institucionais. Perfil analítico, focado em organização, qualidade de dados e
-soluções escaláveis.
-
-% ---------- Experiência ----------
-\section{Experiência Profissional}
-\entry{Estagiária de Desenvolvimento de Software}
-      {Instituto Estadual de Meio Ambiente e Recursos Hídricos (IEMA)}
-      {Nov 2025 -- atual}{}
+{\LARGE\bfseries\color{accent} Lorena Moreira de Nadai}\\[-1pt]
+{\normalsize\bfseries Desenvolvimento de Sistemas \textbar{} Análise de TI}\\[4pt]
+{\small
+Cariacica -- ES \textbar{} (27) 997399041 \textbar{} \href{mailto:lorenadenadai679@gmail.com}{lorenadenadai679@gmail.com}\\
+LinkedIn: \href{https://www.linkedin.com/in/lorena-denadai-17a39037b}{linkedin.com/in/lorena-denadai-17a39037b}
+\textbar{} GitHub: \href{https://github.com/denadaiLorena}{github.com/denadaiLorena}
+}
+\section*{Resumo profissional}
+Estudante de Ciência da Computação, com experiência prática em desenvolvimento e manutenção de sistemas institucionais, integração de bancos de dados e atendimento a usuários. Atua com PHP, Python, JavaScript e bancos de dados relacionais, participando da implementação de regras de negócio, desenvolvimento de APIs, construção de dashboards e automação de processos. Possui perfil analítico, interesse em melhoria contínua e experiência em transformar demandas de usuários em adequações e soluções tecnológicas.
+\section*{Competências técnicas}
 \begin{itemize}
-  \item Desenvolvimento autônomo (full-stack) de sistema interno para acompanhamento de
-        processos complexos, com implementação de motor de cálculo automatizado para
-        estimativa de custos, validação eletrônica da documentação de solicitações e módulo
-        de contabilidade e controle rigoroso do estoque consumido pelo setor interno,
-        utilizando PHP, JavaScript e PostgreSQL.
+\item \textbf{Linguagens:} PHP, Python, Java e JavaScript.
+\item \textbf{Desenvolvimento web:} HTML5, CSS3, Vue.js e Quasar.
+\item \textbf{Back-end e APIs:} FastAPI, Flask e APIs REST.
+\item \textbf{Banco de dados:} PostgreSQL, SQL Server e MySQL; consultas SQL, filtros, JOINs e operações CRUD.
+\item \textbf{Dados e automação:} Pandas, ETL, integração de fontes de dados e geração de relatórios.
+\item \textbf{Ferramentas:} Git, GitHub, Docker e OpenShift.
+\item \textbf{IA aplicada:} LLMs e RAG em projetos acadêmicos e protótipos.
 \end{itemize}
-
-% ---------- Formação ----------
-\section{Formação Acadêmica}
-\entry{Bacharelado em Ciência da Computação}
-      {FAESA -- Centro Universitário}
-      {Conclusão prevista: Dez 2027}{}
-\vspace{4pt}
-
-\entry{Montagem e Manutenção de Computadores}
-      {Senai Vitória}
-      {Conclusão: 2021}{}
-
-% ---------- Projetos ----------
-\section{Projetos Destacados}
-\textbf{Dashboard Analítico de Indicadores (GitLab)}
+\section*{Experiência profissional}
+\textbf{Instituto Estadual de Meio Ambiente e Recursos Hídricos (IEMA)}\\[-2pt]
+\textit{Estagiária de Tecnologia da Informação \textbar{} Novembro/2025 -- Atual}
+Atuação no desenvolvimento, manutenção e adequação de sistemas institucionais, integração de fontes de dados e atendimento a demandas dos usuários.
+\vspace{2pt}
+\textbf{Sistema de solicitações de análises ambientais (CTECAD) \textbar{} PHP e PostgreSQL}
 \begin{itemize}
-  \item Desenvolvimento de aplicação full-stack de dashboard analítico para indicadores do
-        GitLab, utilizando Quasar e Flask, integrada a uma rotina batch em C\# para
-        processamento automatizado de dados e PostgreSQL.
+\item Desenvolvimento e manutenção de sistema institucional para gerenciamento de solicitações de análises ambientais.
+\item Implementação de fluxos de solicitação, avaliação documental e acompanhamento de processos.
+\item Desenvolvimento de regras de negócio para cálculo de custos, gerenciamento de parâmetros de preços e controle de estoque.
+\item Migração da persistência de dados baseada em arquivos JSON e planilhas para PostgreSQL.
+\item Organização da aplicação em camadas, com controllers, services, repositories e views, além de otimização de consultas.
 \end{itemize}
-
-\vspace{4pt}
-\textbf{Sistema de Análise e Otimização de Dados da COVID-19}
+\vspace{1pt}
+\textbf{Dashboard de indicadores e integração com GitLab \textbar{} Python e PostgreSQL}
 \begin{itemize}
-  \item Tratamento e análise de grandes volumes de microdados de saúde utilizando Python e
-        Pandas.
-  \item Implementação de técnicas de \textit{chunking} e do formato Parquet, otimizando o
-        carregamento e a performance no processamento de milhões de registros.
+\item Desenvolvimento e manutenção de dashboard para acompanhamento de indicadores de projetos e atividades do GitLab.
+\item Integração da API do GitLab com Data Warehouse em PostgreSQL.
+\item Desenvolvimento de rotinas de processamento e geração de relatórios utilizando Python e Pandas.
+\item Otimização de consultas e processamento de dados.
 \end{itemize}
-
-\vspace{4pt}
-\textbf{Mapa de Acessibilidade (Projeto Acadêmico)}
+\vspace{1pt}
+\textbf{API de consulta de multas e notificações \textbar{} FastAPI, SQL Server e PostgreSQL}
 \begin{itemize}
-  \item Desenvolvimento de aplicativo baseado em geolocalização utilizando Java e a API
-        osmdroid para identificar pontos urbanos acessíveis.
+\item Desenvolvimento de APIs REST para consulta de dados de multas e notificações.
+\item Integração com fontes de dados em SQL Server e PostgreSQL.
+\item Implementação de filtros por período, paginação e tratamento dos dados retornados.
+\item Integração do back-end com interface desenvolvida em Quasar.
 \end{itemize}
-
-% ---------- Competências ----------
-\section{Competências Técnicas}
+\vspace{1pt}
+\textbf{Atendimento e adequação de sistemas}
 \begin{itemize}
-  \item[] \textbf{Linguagens \& Frameworks:} Java (Spring Boot), PHP, Python (Pandas),
-          JavaScript, HTML, CSS, Quasar, Angular.
-  \item[] \textbf{Bancos de Dados:} PostgreSQL, MongoDB.
-  \item[] \textbf{Ferramentas \& Conceitos:} Git, GitHub, APIs RESTful, Modelagem de Dados,
-          Otimização, Data Warehouse (DW).
+\item Atendimento a usuários, levantamento de necessidades e compreensão de demandas relacionadas aos sistemas institucionais.
+\item Investigação de problemas e implementação de ajustes e melhorias em colaboração com a equipe.
 \end{itemize}
-
+\section*{Projetos relevantes}
+\textbf{Análise de dados de criminalidade -- Projeto Integrador}
+\begin{itemize}
+\item Desenvolvimento de processo ETL para tratamento e organização de dados públicos do SINESP e estruturação dos dados em PostgreSQL.
+\item Desenvolvimento de solução acadêmica para exploração dos dados e análise contextual com recursos de inteligência artificial.
+\end{itemize}
+\textbf{Ecommerce AI Dashboard}
+\begin{itemize}
+\item Desenvolvimento de dashboard para visualização e acompanhamento de indicadores de e-commerce.
+\item Exploração de recursos de inteligência artificial para apoiar a interpretação de indicadores.
+\end{itemize}
+\section*{Reconhecimentos e premiações}
+\textbf{1º lugar -- Ideathon LUV \textbar{} Prefeitura de Vitória}\\[-2pt]
+\textit{Comunidade para idosos ensinarem e aprenderem diversas habilidades manuais}
+\begin{itemize}
+\item Participação na idealização de uma comunidade digital de ensino e aprendizagem entre pessoas idosas, incentivando socialização, compartilhamento de habilidades e oportunidades de empreendedorismo.
+\item Construção colaborativa de plataforma web com assistente virtual para auxiliar os idosos na utilização do sistema e reduzir barreiras de acesso tecnológico.
+\item Iniciativa selecionada para continuidade do apoio institucional por meio de mentorias e acompanhamento da Prefeitura de Vitória.
+\end{itemize}
+\textbf{2º lugar -- 15º HackFaesa}\\[-2pt]
+\textit{Assistente virtual para segurança digital de idosos}
+\begin{itemize}
+\item Participação no desenvolvimento colaborativo de proposta de assistente virtual para auxiliar pessoas idosas em compras on-line, orientando a navegação em plataformas de e-commerce e alertando sobre possíveis golpes, anúncios enganosos e produtos falsificados.
+\item Solução voltada à inclusão digital, autonomia e segurança de idosos no ambiente virtual.
+\end{itemize}
+\section*{Formação acadêmica}
+\textbf{Bacharelado em Ciência da Computação -- FAESA}\\[-2pt]
+6º período \textbar{} Conclusão prevista: dezembro de 2027.
+\section*{Cursos complementares}
+\begin{itemize}
+\item Java Básico -- Curso em Vídeo (40 horas).
+\item Java Orientado a Objetos -- Curso em Vídeo (40 horas).
+\item Python -- Mundo 1, 2 e 3, Curso em Vídeo (120 horas).
+\item Montagem e Manutenção de Computadores -- SENAI (180 horas, 2021).
+\item Introdução à Ciência de Dados -- FGV (60 horas).
+\end{itemize}
 \end{document}
